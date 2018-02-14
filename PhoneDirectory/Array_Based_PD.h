@@ -53,9 +53,7 @@ public:
 	void save();
 
 	class Directory_Entry
-
 	{
-
 	public:
 
 		Directory_Entry() {} // Default no-argument constructor
