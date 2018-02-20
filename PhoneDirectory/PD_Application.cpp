@@ -85,12 +85,22 @@ void do_lookup_entry(Phone_Directory& the_directory)
 	}
 }
 
-void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please complete the function do_remove_entry - Ed/Kent
+void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: worked on by Keenan Robinson
 {
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
-	// Complete the rest of this function 
+	string deleted_entry = the_directory.remove_entry(name);
+	if (deleted_entry != "")
+	{
+		cout << "the entry for " << name << " has been removed." << endl;
+	}
+	
+	else
+	{
+		cout << name << " is not in the directory" << endl;
+	}
+	
 	
 }
 
